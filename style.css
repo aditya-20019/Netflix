@@ -145,7 +145,7 @@ header {
 
 .movie-section {
 	margin-top: 60px;
-	padding: 10px 30px;
+	padding:  40px 0 20px 20px;
 	background-color: #141414;
 }
 
@@ -169,15 +169,16 @@ header {
 .carousel-slide {
 	display: flex;
 	flex: 0 0 100%;
-	justify-content: space-around;
+	justify-content: space-between; /* changed from space-around */
 	scroll-snap-align: start;
 }
 
 
 .movie-card {
-	width: 200px;
-	height: 300px;
+	width: calc(100% / 5 - 16px); /* 5 cards per row with spacing */
+	height: 270px; /* adjust as needed */
 	flex-shrink: 0;
+	margin: 0 8px; /* reduce side margin */
 	border-radius: 6px;
 	overflow: hidden;
 	transition: transform 0.3s ease;
@@ -213,6 +214,122 @@ header {
 .nav.right {
 	right: 10px;
 }
+
+
+/*more reasons to join */
+
+.reasons-section {
+	background-color: #000;
+	color: white;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.reasons-section h2 {
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.reasons-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.reason-card {
+	background-color: #141414;
+	padding: 20px;
+	border-radius: 12px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+	transform: scale(1.02);
+}
+
+.reason-card img {
+	width: 100%;
+	max-width: 250px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.reason-card h3 {
+	margin-bottom: 10px;
+	font-size: 1.25rem;
+}
+
+.reason-card p {
+	color: #ccc;
+	font-size: 0.95rem;
+}
+
+
+/*faq*/
+
+.faq-section {
+	background-color: #000;
+	padding: 60px 20px;
+	color: white;
+	text-align: center;
+  }
+  
+  .faq-title {
+	font-size: 2rem;
+	margin-bottom: 30px;
+  }
+  
+  .faq-container {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .faq-item {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #333;
+  }
+  
+  .faq-question {
+	width: 100%;
+	padding: 20px;
+	font-size: 1.2rem;
+	background: #303030;
+	border: none;
+	color: white;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+  }
+  
+  .faq-question .icon {
+	font-size: 2rem;
+	transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+	display: none;
+	background: #303030;
+	padding: 20px;
+	text-align: left;
+  }
+  
+  .faq-item.open .faq-answer {
+	display: block;
+  }
+  
+  .faq-item.open .icon {
+	transform: rotate(45deg); /* turns + into × */
+  }
+  
+  
 
 /*footer*/
 .footer {
