@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Netflix</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header class="position-relative">
+		<div class="main-container">
+			<div class="overlay"></div>
+			<nav class="navbar">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo"
+					class="logo">
+				<div>
+					<select class="language-picker">
+						<option>English</option>
+						<option>Español</option>
+					</select>
+					<button class="sign-in-btn">Sign In</button>
+				</div>
+			</nav>
+
+
+			<div class="hero-content">
+				<h1>Unlimited movies, TV shows, and more</h1>
+				<h2>Watch anywhere. Cancel anytime.</h2>
+				<p>Ready to watch? Enter your email to create or restart your membership.</p>
+				<div class="email-form">
+					<input type="email" placeholder="Email address" />
+					<button>Get Started &gt;</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Movie Cards Section -->
+	<section class="movie-section">
+		<h2>Popular on Netflix</h2>
+		<div class="carousel-wrapper no-js-carousel">
+
+			<!-- Left Arrow -->
+			<a href="#slide1" class="nav left">&#10094;</a>
+
+			<!-- Carousel Container -->
+			<div class="carousel-container" id="carousel">
+				<!-- Slide 1 -->
+				<div class="carousel-slide" id="slide1">
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/6Lw54zxm6BAEKJeGlabyzzR5Juu.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="dp.jfif" alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+							alt=""></div>
+				</div>
+
+				<!-- Slide 2 -->
+				<div class="carousel-slide" id="slide2">
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/rTh4K5uw9HypmpGslcKd4QfHl93.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg"
+							alt=""></div>
+				</div>
+
+				<!-- Slide 3 -->
+				<div class="carousel-slide" id="slide3">
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/hZIduTNxiR3rhl5Wo3ZjSBmGZt4.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/vRQnzOn4HjIMX4LBq9nHhFXbsSu.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg"
+							alt=""></div>
+					<div class="movie-card"><img src="https://image.tmdb.org/t/p/w500/6Lw54zxm6BAEKJeGlabyzzR5Juu.jpg"
+							alt=""></div>
+				</div>
+			</div>
+
+			<!-- Right Arrow -->
+			<a href="#slide2" class="nav right">&#10095;</a>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer-container">
+		  <p class="footer-contact">Questions? Call <a href="#">000-800-919-1694</a></p>
+	  
+		  <div class="footer-grid">
+			<ul>
+			  <li><a href="#">FAQ</a></li>
+			  <li><a href="#">Investor Relations</a></li>
+			  <li><a href="#">Privacy</a></li>
+			  <li><a href="#">Speed Test</a></li>
+			</ul>
+			<ul>
+			  <li><a href="#">Help Center</a></li>
+			  <li><a href="#">Jobs</a></li>
+			  <li><a href="#">Cookie Preferences</a></li>
+			  <li><a href="#">Legal Notices</a></li>
+			</ul>
+			<ul>
+			  <li><a href="#">Account</a></li>
+			  <li><a href="#">Ways to Watch</a></li>
+			  <li><a href="#">Corporate Information</a></li>
+			  <li><a href="#">Only on Netflix</a></li>
+			</ul>
+			<ul class="social-icons">
+			  <li><a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/facebook--v1.png" alt="Facebook"></a></li>
+			  <li><a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/instagram-new.png" alt="Instagram"></a></li>
+			  <li><a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/twitter--v1.png" alt="Twitter"></a></li>
+			  <li><a href="#"><img src="https://img.icons8.com/ios-filled/25/ffffff/youtube-play.png" alt="YouTube"></a></li>
+			</ul>
+		  </div>
+	  
+		  <div class="footer-lang">
+			<select class="language-picker">
+			  <option>English</option>
+			  <option>Español</option>
+			</select>
+		  </div>
+
+		  <div class="newsletter">
+			<p>Subscribe for updates and new releases</p>
+			<form>
+			  <input type="email" placeholder="Your email" required />
+			  <button type="submit">Subscribe</button>
+			</form>
+		  </div>
+		  
+	  <br><br>
+		  <p class="footer-copy">Netflix Clone © 2025</p>
+		</div>
+	  </footer>
+	  
+	<a href="#" class="back-to-top">&#8679;</a>
+	<script>
+		const topBtn = document.querySelector('.back-to-top');
+		window.addEventListener('scroll', () => {
+			if (window.pageYOffset > 300) {
+				topBtn.classList.add('show');
+			} else {
+				topBtn.classList.remove('show');
+			}
+		});
+	</script>
+</body>
+
+</html>
